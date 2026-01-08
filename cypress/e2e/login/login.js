@@ -1,6 +1,6 @@
 import { loginPage } from "../../pages/loginPage";
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import { assertUtils } from "../utils/commonUtils";
+import { assertUtils } from "../../utils/commonUtils";
 
 
 //precondition: user is in login page
