@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/cypress-bdd-cucumber.git](https://github.com/your-username/cypress-bdd-cucumber.git)
+    git clone https://github.com/your-username/cypress-bdd-cucumber.git
     cd cypress-bdd-cucumber
     ```
 
@@ -55,6 +55,8 @@ Before you begin, ensure you have the following installed:
 | `npm run test` | Runs all tests in Headless Mode |
 | `npm run allure:run` | **(Recommended)** Runs tests + Generates Allure Report + Opens Report |
 | `npm run report:clean` | Deletes old Allure results and reports |
+| `npm run test:positive` | Runs only positive scenarios (`@positive`)|
+| `npm run test:negative` | Runs only negative scenarios (`@negative`)|
 
 ---
 
