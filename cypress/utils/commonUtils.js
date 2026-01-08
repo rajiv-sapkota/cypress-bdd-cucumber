@@ -21,11 +21,34 @@ class AssertUtils{
 
     assertUrlContains(expectedSubstring){
         cy.url().should('include', expectedSubstring);
-    }   
+    } 
+    
+    assertInvisibleElement(locater){
+        cy.get(locater).should("not.be.visible")
+    }
+
+    assertVisibleElementByIndex(locator,index){
+        cy.get(locator).eq(index).should("be.visible")
+    }
 
 
 
 
 }
 
+class ClickUtils{
+    clickElement(locator){
+        cy.get(locator).click()
+    }
+
+    clickElementByForce(locator){
+        cy.get(locator).click({force:true})
+    }
+
+    clickElementByText(clickableText){
+        cy.contains(clickableText).click()
+    }
+}
+
 export const assertUtils = new AssertUtils();
+export const clickUtils=new ClickUtils()
