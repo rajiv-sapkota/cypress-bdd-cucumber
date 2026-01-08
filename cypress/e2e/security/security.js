@@ -22,7 +22,7 @@ Then("i should be in login page and i should see error message for cart",()=>{
 When("i try to access checkout page",()=>{
     cy.visit("https://www.saucedemo.com/checkout-step-one.html",{failOnStatusCode:false})
 })
-Then("i should be in login page and i should see error message for cart",()=>{
+Then("i should be in login page and i should see error message for checkout",()=>{
     assertUtils.assertCurretntUrl('https://www.saucedemo.com/')
     assertUtils.assertErrorMessage('[data-test=error]',"Epic sadface: You can only access '/checkout-step-one.html' when you are logged in.")
 })
