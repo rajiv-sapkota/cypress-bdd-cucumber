@@ -30,8 +30,8 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/your-username/cypress-bdd-cucumber.git
-    cd cypress-bdd-cucumber
+    git clone https://github.com/rajiv-sapkota/Cypress-BDD-Cucumber.git
+    cd Cypress-BDD-Cucumber
     ```
 
 2.  **Install Dependencies:**
